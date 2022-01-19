@@ -6,8 +6,74 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header>
+      <!--Menu superior-->
+      <div id="logoBox">
+        <img id="logoImg" src="C:\Users\Cote\Desktop\laboratoria\Proyecto 1\Imagenes\logotipo.png" alt="logotipo">
+      </div>
+      <div id="navMenu">
+      </div>
+    </header>
+    <!--Main-->
+    <div>
+      <h2>Finaliza tu compra</h2>
+      
+      <!--Contenedor de columnas-->
+      <div class="content">
+        <!--Columna izquierda-->
+        <div id="columnLeft">
+          <div id="columnLeftparagraph">
+            <p class="paragraph">Hola María, gracias por preferirnos!, por favor ingresa tus datos bancarios para efectuar tu compra.</p>
+          </div>
+          <img id="cardImage" src="C:\Users\Cote\Desktop\laboratoria\Proyecto 1\Imagenes\card-image.png" alt="card-image">
+          <div class="buttonBox">
+           <button>Total a pagar: $20990</button>
+          </div>
+        </div>
+        <!--columna derecha-->
+        <div id="columnRight">
+          <p class="paragraph">Ingresa tus datos</p>
+        <!--Input de tarjeta-->
+          <div id="cardNumberBox">
+            <label class="cardData" for="name">Nº de tarjeta:</label>
+            <input class="inputPair" type="tel" maxlength="1" required name="inputPairName">
+            <input class="inputOdd" type="tel" maxlength="1" required name="inputOddName">
+            <input class="inputPair" type="tel" maxlength="1" required name="inputPairName">
+            <input class="inputOdd" type="tel" maxlength="1" required name="inputOddName">
+            <p class="inputSeparator">-</p>
+            <input class="inputPair" type="tel" maxlength="1" required name="inputPairName">
+            <input class="inputOdd" type="tel" maxlength="1" required name="inputOddName">
+            <input class="inputPair" type="tel" maxlength="1" required name="inputPairName">
+            <input class="inputOdd" type="tel" maxlength="1" required name="inputOddName">
+            <p class="inputSeparator">-</p>
+            <input class="inputPair" type="tel" maxlength="1" required name="inputPairName">
+            <input class="inputOdd" type="tel" maxlength="1" required name="inputOddName">
+            <input class="inputPair" type="tel" maxlength="1" required name="inputPairName">
+            <input class="inputOdd" type="tel" maxlength="1" required name="inputOddName">
+            <p class="inputSeparator">-</p>
+            <input class="inputPair" id="inputPairInBlock" type="tel" maxlength="1" required name="inputPairName">
+            <input class="inputOdd" id="inputPairInBlock" type="tel" maxlength="1" required name="inputOddName">
+            <input class="inputPair"id="inputPairInBlock" type="tel" maxlength="1" required name="inputPairName">
+            <input class="inputOdd" id="inputPairInBlock" type="tel" maxlength="1" required name="inputOddName">
+         </div>
+        <!--CVV-->
+          <div id="cvvBox">
+           <label class="cardData" for="name">CVV</label>
+           <input type="number" id="inputCvv">
+          </div>
+        <!--Fecha de caducidad-->
+          <div id="dateExpiryBox">
+            <label class="cardData" for="dateExpiry">Fecha de expiración</label>
+            <input type="date" id="dateExpiry" name="dateExpiryName" min="2022-01-01" max="2023-12-31">
+          </div>
+        <!--boton de validación-->
+          <div class="buttonBox">
+           <button id="cardValidationButton" type= "button" onclick="cardValidation()">Pagar</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
     <footer></footer>
     <script src="index.js" type="module"></script>
   </body>

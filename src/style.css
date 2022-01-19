@@ -1,0 +1,125 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+/*Menú superior*/
+#logoBox{
+    background-color: #faa299;
+    padding: 30px;
+}
+#logoImg{
+    width: 150px;
+}
+#navMenu{
+    background-color: #ffe3b2;
+    height: 25px;
+}
+/*Botones*/
+.buttonBox{
+    float: none;
+    text-align: center;
+}
+button{
+    background-color: #faa299;
+    border-radius: 15px;
+    width: auto;
+    padding: 7px 15px 7px 15px;
+    margin: 10px 0px 10px 0px;
+    color: white;
+    border: 0px;
+    font-size: 15px;
+    font-weight: 600;
+}
+#cardValidationButton{
+    float: none;
+}
+/*Caja para columnas*/
+.content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+div h2{
+    text-align: center;
+}
+/*Columna izquierda*/
+#columnLeft{
+    width: 60%;
+}
+#columnLeftparagraph{
+    width: 50%;
+    margin: auto;
+}
+.paragraph{
+    text-align: center;
+    font-size: 17px;
+}
+.cardData{
+    display: block;
+    text-align: left;
+    font-size: 13px;
+}
+#cardImage{
+    width: 400px;
+    display: block;
+    margin: auto;
+}
+/*Columna derecha*/
+#columnRight{
+    width: 38%;
+    padding: 0px 5px 0px 5px;
+}
+/*Input tarjeta*/
+.inputOdd, .inputPair{
+    height: 30px;
+    width: 4.5%;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: rgb(250, 244, 244);
+    text-align: center;
+    /*-webkit-text-security: disc;*/
+}
+/*#inputPairInBlock{
+    -webkit-text-security: inherit;
+}*/
+#inputCvv{
+    height: 25px;
+    width: 50px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: rgb(250, 244, 244);
+    text-align: center;
+
+}
+.inputSeparator{
+    display: inline;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+#dateExpiry{
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: rgb(250, 244, 244);
+    text-align: center;
+}
+#cvvBox{
+    display: block;
+    margin: auto;
+    width: 30%;
+    float: left;
+    
+}
+#dateExpiryBox{
+    margin: auto;
+    width 70%;
+}
+#cardNumberBox, #cvvBox, #dateExpiryBox, .buttonBox{
+    padding-top: 20px;
+}
