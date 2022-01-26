@@ -31,12 +31,16 @@ La interfaz de este proyecto permite al usuario insertar el número de su tarjet
 
 ## 4. Especificaciones técnicas
 En este proyecto se utilizó HTML, CSS y Vanilla JavaScript. En el caso de JS, hay dos archivos:
-    A.- index.js: se centra en la funcionalidad de botones y cambio de estilos (CSS). 
-    B.- validator.js: Permite hacer las validaciones correspondientes, utilizando el algoritmo de luhn a través condicionales y bucles.
-    El objeto "Validator" contiene dos métodos: isvalid y maskify. isValid permite validar la tarjeta de crédito, comenzando con la obtención del número ingresado y guardandolo en un Array a través del bucle for, para luego, ejecutar el algoritmo de Luhn a través del bucle forEach y la condicional if, finalmente isvalid retorna un boolean. 
-    Por otro lado, está el método maskify, donde a través del bucle for, se reemplazan los digitos de la tarjeta por "#" y se guardan en un nuevo array, excepto los últimos 4 digitos de la tarjeta, para luego mostrarlo en el caso de que la tarjeta sea válida.
+#### index.js
+Se centra en la funcionalidad de botones y cambio de estilos (CSS). 
+#### validator.js
+Permite hacer las validaciones correspondientes, utilizando el algoritmo de luhn a través condicionales y bucles. Dentro de este archivo puedes encontrar un objeto "Validator", que contiene dos métodos: isvalid y maskify.
+###### isValid
+Permite validar la tarjeta de crédito, comenzando con la obtención del número ingresado y guardandolo en un Array a través del bucle for, para luego, ejecutar el algoritmo de Luhn a través del bucle forEach y la condicional if, finalmente isvalid retorna un boolean.
+##### maskify
+Función donde a través del bucle for, se reemplazan los digitos de la tarjeta por "#" y se guardan en un nuevo array, excepto los últimos 4 digitos de la tarjeta, para luego mostrarlo en el caso de que la tarjeta sea válida.
 
-## 4. Requisitos de instalación
+## 5. Requisitos de instalación
 Si usted quiere instalar este repositorio en su local y probar o revisar el código, deberá instalar git, un interpretador de lineas de comando y node.js. Deberá instalar las dependencias del proyecto con el comando npm install en la carpeta del proyecto, y podrá realizar las pruebas univarias usando el comando npm test.
 Para ver el proyecto debe ejecutar el comando npm start
 Podrá ver la interfaz del proyecto en su navegador utilizando la url https://localhost:3000
