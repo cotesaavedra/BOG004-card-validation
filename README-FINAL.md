@@ -18,7 +18,7 @@ Este proyecto simula un sistema de pago a través de la validación de la tarjet
 ## 2. Investigación UX
 Para contextualizar, el simulador de pago está integrado a una e-commerce de papelería, el proyecto comienza con la parte final del proceso de compra, donde el cliente ingresa sus datos bancarios. Los usuarios son principalmente mujeres que deseen comprar algún artículo de librería y planificación, pudiendo adquirir estos productos y pagando por ellos a través de esta página, el proceso de compra será exitoso solo si su tarjeta bancaria es correcta.
 
-![IMAGEN DEL PROTOTIPO EN PAPEL]()
+![IMAGEN DEL PROTOTIPO EN PAPEL](https://raw.githubusercontent.com/cotesaavedra/BOG004-card-validation/main/prototipo-papel.jpg)
 En relación al feedback otorgado por mis compañeras, se les mostró el prototipo creado en Adobe XD, con los colores, fuentes de texto y elementos que compondrían el proyecto, además se les comentó la temática del proyecto. Lo recibido en el feedback fue positivo, comentaron que era una buena idea el simulador de sistema de pago, además les pareció acorde la paleta de colores con la idea de papelería.
 
 ![Imagen 1](https://raw.githubusercontent.com/cotesaavedra/BOG004-card-validation/main/1.png)
