@@ -18,8 +18,13 @@ Este proyecto simula un sistema de pago a través de la validación de la tarjet
 ## 2. Investigación UX
 Para contextualizar, el simulador de pago está integrado a una e-commerce de papelería, el proyecto comienza con la parte final del proceso de compra, donde el cliente ingresa sus datos bancarios. Los usuarios son principalmente mujeres que deseen comprar algún artículo de librería y planificación, pudiendo adquirir estos productos y pagando por ellos a través de esta página, el proceso de compra será exitoso solo si su tarjeta bancaria es correcta.
 
+### Prototipo
+Se realizó un prototipo pensado principalmente en la experiencia del usuario conforme al área de la papelería, con colores cálidos, así mismo una fuente de texto tipo "lettering" para titulos. En la imagen, al lado izquierdo se puede ver lo que el cliente ve directamente en la web, y al lado izquierdo se ve el prototipo con la maquetación en HTML.
+
 ![IMAGEN DEL PROTOTIPO EN PAPEL](https://raw.githubusercontent.com/cotesaavedra/BOG004-card-validation/main/prototipo-papel.jpg)
-En relación al feedback otorgado por mis compañeras, se les mostró el prototipo creado en Adobe XD, con los colores, fuentes de texto y elementos que compondrían el proyecto, además se les comentó la temática del proyecto. Lo recibido en el feedback fue positivo, comentaron que era una buena idea el simulador de sistema de pago, además les pareció acorde la paleta de colores con la idea de papelería.
+
+### Feedback
+En relación al feedback otorgado por mis compañeras, se les mostró el prototipo creado en Adobe XD, con los colores, fuentes de texto y elementos que compondrían el proyecto, además se les comentó la temática del proyecto. Los comentarios  feedback fueron positivos, comentaron que era una buena idea el simulador de sistema de pago, además les pareció acorde la paleta de colores y texto con la idea de papelería.
 
 ![Imagen 1](https://raw.githubusercontent.com/cotesaavedra/BOG004-card-validation/main/1.png)
 ![Imagen 2](https://raw.githubusercontent.com/cotesaavedra/BOG004-card-validation/main/pago-exitoso-tarjeta-valida.png)
@@ -31,13 +36,13 @@ La interfaz de este proyecto permite al usuario insertar el número de su tarjet
 
 ## 4. Especificaciones técnicas
 En este proyecto se utilizó HTML, CSS y Vanilla JavaScript. En el caso de JS, hay dos archivos:
-#### index.js
+#### A. index.js
 Se centra en la funcionalidad de botones y cambio de estilos (CSS). 
-#### validator.js
+#### B. validator.js
 Permite hacer las validaciones correspondientes, utilizando el algoritmo de luhn a través condicionales y bucles. Dentro de este archivo puedes encontrar un objeto "Validator", que contiene dos métodos: isvalid y maskify.
 ###### isValid
 Permite validar la tarjeta de crédito, comenzando con la obtención del número ingresado y guardandolo en un Array a través del bucle for, para luego, ejecutar el algoritmo de Luhn a través del bucle forEach y la condicional if, finalmente isvalid retorna un boolean.
-##### maskify
+###### maskify
 Función donde a través del bucle for, se reemplazan los digitos de la tarjeta por "#" y se guardan en un nuevo array, excepto los últimos 4 digitos de la tarjeta, para luego mostrarlo en el caso de que la tarjeta sea válida.
 
 ## 5. Requisitos de instalación
