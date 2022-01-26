@@ -2,6 +2,35 @@ body{
     padding: 0px;
     margin: 0px;
 }
+#validCardContent, #invalidCardContent{
+    display: none;
+    width: 100%;
+}
+@font-face {
+    font-family:"AdeliaPasha";
+    src: url(Adelia-pasha.ttf);
+}
+@font-face {
+    font-family:"Louis George Cafe";
+    src: url(Louis-George-Cafe.ttf);
+}
+h2{
+    font-family: "AdeliaPasha", cursive;
+    font-size: 40px;
+    font-weight: 400;
+    color: #707070;
+}
+p{
+    font-family: "Louis George Cafe";
+    font-size: 20px;
+    font-weight: 400;
+}
+label{
+    font-family: "Louis George Cafe";
+    font-size: 10px;
+    font-weight: 400;
+
+}
 /*Menú superior*/
 #logoBox{
     background-color: #faa299;
@@ -19,7 +48,7 @@ body{
     float: none;
     text-align: center;
 }
-button{
+button, a{
     background-color: #faa299;
     border-radius: 15px;
     width: auto;
@@ -30,11 +59,27 @@ button{
     font-size: 15px;
     font-weight: 600;
 }
-#cardValidationButton{
+.buttonBox button{
     float: none;
 }
+a{
+    font-family: "arial";
+    display: block;
+    width: 5%;
+    text-align: center;
+    margin: auto;
+    text-decoration: none;
+}
+#inputRequired{
+    font-size: 12px;
+    color: red;
+}
+/*Columnas ocultas*/
+/*#contentWithResult{
+    display: none;
+}*/
 /*Caja para columnas*/
-.content{
+#content{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -56,7 +101,7 @@ div h2{
 }
 .cardData{
     display: block;
-    text-align: left;
+    text-align: center;
     font-size: 13px;
 }
 #cardImage{
@@ -70,15 +115,20 @@ div h2{
     padding: 0px 5px 0px 5px;
 }
 /*Input tarjeta*/
-.inputOdd, .inputPair{
+#cardNumber{
     height: 30px;
-    width: 4.5%;
+    width: 70%;
     border-radius: 5px;
     border: none;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     background-color: rgb(250, 244, 244);
     text-align: center;
+    display: block;
+    margin: auto;
     /*-webkit-text-security: disc;*/
+}
+.buttonBox button{
+cursor: pointer;
 }
 /*#inputPairInBlock{
     -webkit-text-security: inherit;
@@ -91,6 +141,8 @@ div h2{
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     background-color: rgb(250, 244, 244);
     text-align: center;
+    display: block;
+    margin: auto;
 
 }
 .inputSeparator{
@@ -108,18 +160,39 @@ input[type=number]::-webkit-outer-spin-button {
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     background-color: rgb(250, 244, 244);
     text-align: center;
+    display: block;
+    margin: auto;
 }
 #cvvBox{
     display: block;
     margin: auto;
-    width: 30%;
-    float: left;
+    width: 100%;
+    float: none;
     
 }
 #dateExpiryBox{
     margin: auto;
-    width 70%;
+    width: 70%;
 }
 #cardNumberBox, #cvvBox, #dateExpiryBox, .buttonBox{
     padding-top: 20px;
+}
+/*Pantalla de resultados*/
+#contentWithResult{
+    width: 100%;
+}
+#contentWithResult h2, p{
+    text-align: center;
+}
+/*invalidCardContent*/
+#invalidCardContent img{
+    width: 20%;
+    display: block;
+    margin: auto;
+}
+#validCardContent img{
+    width: 10%;
+    display: block;
+    margin: auto;
+    padding: 10px;
 }
