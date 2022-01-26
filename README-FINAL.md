@@ -13,7 +13,8 @@
 ## 1. Resumen
 Este proyecto simula un sistema de pago a través de la validación de la tarjeta de crédito que ingresa el comprador al momento de pagar. El cliente ingresa los números de su tarjeta de crédito, mastercard, visa, etc. El sistema muestra un pago exitoso o invalido según si la tarjeta es correcta o no. La determinación de este proyecto se realizó a través del algoritmo de luhn.
 
-//*IMAGEN PROCESO DE COMPRA*//
+/[IMAGEN PROCESO DE COMPRA](https://raw.githubusercontent.com/cotesaavedra/BOG004-card-validation/a99d2a560454aa1b8bce8a94596bb41f90a28313/proceso%20de%20compra.jpg)
+
 ## 2. Investigación UX
 Para contextualizar, el simulador de pago está integrado a una e-commerce de papelería, el proyecto comienza con la parte final del proceso de compra, donde el cliente ingresa sus datos bancarios. Los usuarios son principalmente mujeres que deseen comprar algún artículo de librería y planificación, pudiendo adquirir estos productos y pagando por ellos a través de esta página, el proceso de compra será exitoso solo si su tarjeta bancaria es correcta.
 
@@ -21,6 +22,7 @@ Para contextualizar, el simulador de pago está integrado a una e-commerce de pa
 En relación al feedback otorgado por mis compañeras, se les mostró el prototipo creado en Adobe XD, con los colores, fuentes de texto y elementos que compondrían el proyecto, además se les comentó la temática del proyecto. Lo recibido en el feedback fue positivo, comentaron que era una buena idea el simulador de sistema de pago, además les pareció acorde la paleta de colores con la idea de papelería.
 
 //*IMAGEN DEL PROTOTIPO FINAL*//
+Puede descargar el prototipo en Adobe XD ![aquí](https://drive.google.com/file/d/1XVSenBwE9IA3ldDGzmsr0nOgbbu6gawp/view?usp=sharing)
 
 ## 3. Especificaciones del proyecto
 La interfaz de este proyecto permite al usuario insertar el número de su tarjeta bancaria, el sistema lo procesa, en este punto se verifica si es o no válida. En el caso de que la tarjeta sea válida el sistema arrojará el mensaje de "compra exitosa" junto con los datos de su tarjeta, donde, por seguridad, los digitos están ocultos, excepto los 4 últimos dígitos. Por otro lado, si la tarjeta es inválida, el sistema mostrará en pantalla que hubo un error y que puede intentar nuevamente. Además el sistema no permite ingresar el campo vacío de "número de tarjeta".
